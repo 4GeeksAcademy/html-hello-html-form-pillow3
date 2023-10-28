@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Form Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main class="bg-light">
+
+        <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            
+            <!-- FORM -->
+            <form action="#" class="form-control bg-white p-3" style="width: 50rem;">
+                <legend class="border-bottom d-flex align-items-center border-bottom-1 rounded-1 mb-3">Payment form example</legend>
+
+                <!-- ALERT -->
+                
+                <div class="form-control alert alert-danger">Some fields are missing.</div>
+                
+                <fieldset>
+                    <!-- CARD -->
+                    <div class="row form-group">
+                        <div class="col-4">
+                            <label class="form-label" for="card">Card #</label>
+                            <input class="form-control" type="number" id="card" name="payment" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="cvc">CVC #</label>
+                            <input class="form-control" type="number" id="cvc" name="payment" placeholder="000">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label" for="card">Amount</label>
+                            <input class="form-control" type="number" id="card" name="payment" placeholder="$">
+                        </div>
+                    </div>
+                    <!-- USER NAME -->
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <label class="form-label" for="name">First Name</label>
+                            <input class="form-control" type="text" id="name" name="name">
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="lastname">Last Name</label>
+                            <input class="form-control" type="text" id="lastname" name="name">
+                        </div>
+                    </div>
+                    
+                    <!-- ADDRESS -->
+                    <div class="row pt-4">
+                        <div class="col-6">
+                            <label class="form-label" for="city">City</label>
+                            <input class="form-control" name="address" type="text">
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="state">State</label>
+                            <select class="form-select" name="address" id="state" aria-label="State">
+                                <option selected>Pick a state</option>
+                                <option class="form-option" value="Madrid">Madrid</option>
+                                <option class="form-option" value="Madrid">Murcia</option>
+                                <option class="form-option" value="Madrid">Barcelona</option>
+                                <option class="form-option" value="Madrid">Sevilla</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="form-label" for="city">Postal Code</label>
+                            <input class="form-control" name="address" type="text">
+                        </div>
+                    </div>
+                    <!-- LAST ROW -->
+                    <div class="row pt-4 d-flex justify-content-between mb-3">
+                        <!-- WE ACCEPT -->
+                        <div class="col-4">
+                            <label class="form-label" for="card-type">We accept:</label>
+                    
+                            <div class="form-control d-flex bg-secondary text-white justify-content-between">
+                                <div>
+                                    <input type="radio" id="mastercard" name="card-type">
+                                    <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="mastercard" name="card-type">
+                                    <label for="mastercard"><i class="fab fa-cc-visa"></i></label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="mastercard" name="card-type">
+                                    <label for="mastercard"><i class="fab fa-cc-amex"></i></label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="mastercard" name="card-type">
+                                    <label for="mastercard"><i class="fab fa-cc-paypal"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label" for="text-area">Message</label>
+                            <textarea class="form-control" rows="3" type="text-area" ></textarea>
+                            <p class="form-label fs">Add any notes here.</p>
+                        </div>
+
+                        <!-- BUTTON FINAL -->
+                        <div class="row">
+                            <div class="d-flex align-items-center justify-content-end mt-4">
+                                <input name="" id="" class="btn btn-secondary me-1" type="submit" value="Cancel">
+                                <input name="" id="" class="btn btn-primary" type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </form>
+        </div>
+
+
+    
+
+
+
+
+
+
+
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
